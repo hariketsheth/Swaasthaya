@@ -1,0 +1,18 @@
+.habit__card {
+  background: white;
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+  counter-increment: gradient-counter;
+  min-height: 3rem;
+  width: 500px;
+  margin: 10px 0;
+  position: relative;
+}
+
+.habit__card:hover {
+  cursor: pointer;
+}
+
+.habit__cardheader {
+  font-family: "Arvo" !important;
+  font-size: 20px;
+}

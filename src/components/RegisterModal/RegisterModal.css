@@ -8,7 +8,6 @@
   width: 500px;
   border-radius: 15px;
 }
-
 .register__modal-header {
   font-family: "Arvo";
   font-weight: 600;
@@ -33,7 +32,6 @@
   font-size: 20px;
   border: 1px thin lightgray;
 }
-
 #password.k-textbox {
   margin-bottom: 30px;
 }
@@ -47,7 +45,6 @@
   margin-bottom: 20px;
   justify-content: space-around;
 }
-
 .auth-modal.k-button {
   border-radius: 10px;
   height: 50px;
@@ -56,7 +53,6 @@
   font-weight: 600;
   font-size: 20px;
 }
-
 .sign-in-modal.k-button {
   background-color: #2856ec;
 }

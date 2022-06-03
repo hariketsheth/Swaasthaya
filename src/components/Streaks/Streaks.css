@@ -1,5 +1,6 @@
 .streaks__main {
-  background-color: #fff8b2;
+  background-color: #fdf074;
+  /* background-color: #FFF8B2; */
   display: flex;
 }
 
@@ -8,7 +9,6 @@
   /* background-color: aqua; */
   text-align: center;
 }
-
 .streaks__middle {
   display: flex;
   flex-direction: column;
@@ -16,24 +16,22 @@
   width: 70vw;
   min-height: 100vh;
 }
-
+.habbits__middle {
+}
 .date__hover {
   text-align: center;
 }
-
 .title__middle {
   margin: 20px 0;
   font-family: "Arvo";
   text-align: center;
   border-bottom: 1px solid black;
 }
-
 .streaks__right {
   margin-right: 20px;
   padding: 40px 0 30px 0;
   border-radius: 10px;
   background-color: #5a2727;
-
   width: 20vw;
   height: fit-content;
   align-self: center;
@@ -50,16 +48,13 @@
   grid-template: repeat(var(--num-rows), 100px) / repeat(var(--num-cols), 100px);
   grid-gap: 2px;
 }
-
 .habits__panelbar {
   margin: 0px 20px 10px 20px;
 }
-
 .habits__panelbar .k-panelbar {
   box-shadow: -1px 4px 20px rgba(0, 0, 0, 1);
   border-radius: 10px;
 }
-
 .habits__panelbar .k-link {
   margin: 10px;
   border-radius: 10px;
@@ -90,7 +85,6 @@
   border-radius: 10px;
   margin-bottom: 10px;
 }
-
 .habits__datepicker-card > .k-card {
   box-shadow: -1px 4px 20px rgba(0, 0, 0, 1);
   margin: 0px 20px 5px 20px;

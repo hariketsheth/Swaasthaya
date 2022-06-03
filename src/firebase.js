@@ -1,13 +1,14 @@
 import firebase from "firebase";
+require('dotenv').config();
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDOAVTlGY7hOOZZpEeZIR8fG71YKHXhAMI",
-  authDomain: "swaasthaya-16620.firebaseapp.com",
-  projectId: "swaasthaya-16620",
-  storageBucket: "swaasthaya-16620.appspot.com",
-  messagingSenderId: "769679244745",
-  appId: "1:769679244745:web:bb7a85d07cf222b48afc18",
-  measurementId: "G-DPCP1V6Z13",
+  apiKey: process.env.FIREBASE_API,
+  authDomain: process.env.FIREBASE_AUTH,
+  projectId: process.env.FIREBASE_PROJECT,
+  storageBucket: process.env.FIREBASE_STORAGE,
+  messagingSenderId: process.env.FIREBASE_MESSAGING,
+  appId: process.env.FIREBASE_APP,
+  measurementId: process.env.FIREBASE_MEASUREMENT,
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);

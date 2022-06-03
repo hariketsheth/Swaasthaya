@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
-
 .home__container {
   height: 100vh;
   width: 100vw;
@@ -9,7 +8,7 @@
 .auth__buttons {
   position: fixed;
   bottom: 0;
-  right: 30px;
+  right: 5vw;
   display: flex;
   flex-direction: column;
   padding: 10px 10px;
@@ -45,36 +44,70 @@
   padding: 10px 0;
   align-self: center;
 }
-
 .home__text-top {
   width: 600px;
   position: fixed;
   right: 130px;
-  font-family: "Nunito";
-  font-size: 50px;
+  font-family: "Arvo";
+  font-size: 9vh;
   font-style: italic;
-  color: #fa5d05;
+  color: #2856ec;
   display: flex;
   flex-direction: column;
+  text-shadow: 3px -2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .top__line-one {
   align-self: center;
 }
 
+.top__line-two {
+  align-self: flex-end;
+  position: relative;
+  top: -50px;
+}
+
 .home__text-bottom {
   position: fixed;
-  right: 50px;
-  bottom: 300px;
+  right: 3vw;
+  bottom: 35vh;
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 400px;
+  width: 500px;
   font-family: "Arvo";
-  font-size: 40px;
+  font-size: 5vh;
 }
 
 .bottom__line-two {
   display: flex;
   align-self: center;
+}
+
+.home__doodle .doodle {
+  position: fixed;
+  animation: goUpDown 3s infinite;
+  height: 100vh;
+  bottom: 30px;
+}
+
+@keyframes goUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: translateY(-100px);
+    transform: rotate(-18deg);
+  }
+}
+
+.doodle-triangle {
+  position: fixed;
+  top: -10vh;
+  left: 130px;
+  height: 100vh;
+  transform: rotate(20deg);
+  z-index: 0;
 }

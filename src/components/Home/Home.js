@@ -5,10 +5,21 @@ import { Ripple } from "@progress/kendo-react-ripple";
 const Home = () => {
   return (
     <div className="home__container">
+      <div className="home__doodle">
+        <img
+          className="doodle-triangle"
+          src="assets/doodle_triangle.png"
+          alt=""
+        />
+        <img className="doodle" src="assets/homee.png" alt="" />
+      </div>
       <div className="home__text">
         <div className="home__text-top">
           <div className="top__line-one">
-            <h1>Swaasthaya</h1>
+            <h1>Kendo</h1>
+          </div>
+          <div className="top__line-two">
+            <h1>Habits</h1>
           </div>
         </div>
         <div className="home__text-bottom">
@@ -16,7 +27,7 @@ const Home = () => {
             <h3>Building habits</h3>
           </div>
           <div className="bottom__line-two">
-            <h3 style={{ color: "#FA5D05" }}>Gamified</h3>
+            <h3 style={{ color: "#2856ec" }}>Gamified</h3>
             <h3>!</h3>
           </div>
         </div>

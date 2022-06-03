@@ -1,28 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
 
 .home__container {
   height: 100vh;
   width: 100vw;
   background-color: #fdf074;
 }
-
 .auth__buttons {
   position: fixed;
   bottom: 0;
-  right: 0;
+  right: 30px;
   display: flex;
   flex-direction: column;
   padding: 10px 10px;
   width: 400px;
   height: 150px;
 }
-
 .buttons__one {
   display: flex;
   justify-content: space-between;
 }
-
 .buttons__one > .k-primary {
   height: 50px;
   width: 150px;
@@ -31,13 +28,11 @@
   font-size: 20px;
   font-weight: 700;
 }
-
 .buttons__two {
   display: flex;
   align-self: center;
   margin-top: 20px;
 }
-
 .buttons__two > .k-button {
   height: 50px;
   width: 325px;
@@ -46,8 +41,40 @@
   font-size: 20px;
   font-weight: 900;
 }
-
 .k-ripple-container {
   padding: 10px 0;
+  align-self: center;
+}
+
+.home__text-top {
+  width: 600px;
+  position: fixed;
+  right: 130px;
+  font-family: "Nunito";
+  font-size: 50px;
+  font-style: italic;
+  color: #fa5d05;
+  display: flex;
+  flex-direction: column;
+}
+
+.top__line-one {
+  align-self: center;
+}
+
+.home__text-bottom {
+  position: fixed;
+  right: 50px;
+  bottom: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  font-family: "Arvo";
+  font-size: 40px;
+}
+
+.bottom__line-two {
+  display: flex;
   align-self: center;
 }

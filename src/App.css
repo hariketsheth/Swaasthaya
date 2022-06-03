@@ -1,3 +1,5 @@
-.app {
-  height: 100vh;
+.App {
+    overflow: hidden;
+    height: 100vh;
+    background-color: #FDF074;
 }

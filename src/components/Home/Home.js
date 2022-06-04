@@ -2,6 +2,7 @@ import { Button } from "@progress/kendo-react-buttons";
 import { Ripple } from "@progress/kendo-react-ripple";
 
 import { useHistory } from "react-router";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./Home.css";
 import { useAuth } from "../../contexts/AuthContext";
@@ -80,7 +81,7 @@ const Home = () => {
             animate={{ x: 0, y: 0, rotate: "-10deg" }}
             transition={{ transition: "ease", duration: 1 }}
             className="doodle"
-            src="assets/homee.png"
+            src="assets/meditate.png"
             alt=""
           />
         </div>
@@ -120,9 +121,11 @@ const Home = () => {
           {/* Add ripple effect for extra pizzazz */}
           <Ripple>
             <div className="buttons__two">
-              <Button className="login-with-google" onClick={handleDemo}>
-                Click Here for Demo
-              </Button>
+              <Link to="https://google.com" style={{ textDecoration: "none" }}>
+                <Button className="login-with-google">
+                  Click Here for Demo
+                </Button>
+              </Link>
             </div>
             <div className="buttons__one">
               <Button

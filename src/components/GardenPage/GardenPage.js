@@ -1,22 +1,48 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Garden from "../Garden/Garden";
 import "./GardenPage.css";
 import "../Garden/game.css";
 import GardenMini from "../GardenMini/GardenMini";
-import { DndProvider } from "react-dnd";
-import { HTML5Backend } from "react-dnd-html5-backend";
+import { auth, db } from "../../firebase";
+import { useHistory } from "react-router";
 
 const GardenPage = () => {
+  const [currentUser, setCurrentUser] = useState();
+  const history = useHistory();
+  const [cloudCoordinates, setCloudCoordinates] = useState([]);
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((authUser) => {
+      if (authUser) {
+        setCurrentUser(authUser);
+
+        db.collection("gardens")
+          .doc(authUser.uid)
+          .onSnapshot((snapshot) => {
+            var temp_cloud = [];
+            snapshot.data().coordinates.map((coordinate) => {
+              temp_cloud.push([
+                coordinate.idx[0],
+                coordinate.idx[1],
+                coordinate.idx[2],
+              ]);
+            });
+            setCloudCoordinates(temp_cloud);
+          });
+      } else {
+        history.push("/");
+      }
+    });
+    return unsubscribe;
+  }, [currentUser]);
+
   return (
-    <DndProvider backend={HTML5Backend}>
-      <div className="garden__page">
-        <Garden />
-        <div className="mini__garden">
-          {/* fetch x, y, and garden_item_type from firebase */}
-          <GardenMini itemPosition={[4, 7]} />
-        </div>
+    <div className="garden__page">
+      <Garden itemPositions={cloudCoordinates} />
+      <div className="mini__garden">
+        {/* fetch x, y, and garden_item_type from firebase */}
+        <GardenMini />
       </div>
-    </DndProvider>
+    </div>
   );
 };
 

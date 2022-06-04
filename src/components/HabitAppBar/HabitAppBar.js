@@ -8,8 +8,7 @@ import {
 import "./HabitAppBar.css";
 import { useAuth } from "../../contexts/AuthContext";
 import { useHistory } from "react-router";
-require("dotenv").config();
-let kendokaAvatar = process.env.AVATAR;
+let kendokaAvatar = process.env.REACT_APP_AVATAR;
 
 const HabitAppBar = ({ userName }) => {
   const { logout } = useAuth();

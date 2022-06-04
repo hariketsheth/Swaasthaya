@@ -3,6 +3,7 @@ import StreakTile from "../StreakTile/StreakTile";
 import { Card, PanelBar, PanelBarItem } from "@progress/kendo-react-layout";
 import { DateRangePicker } from "@progress/kendo-react-dateinputs";
 import "./Streaks.css";
+
 function createHabitStreaks(data) {
   console.log(data);
   let cols = [];
@@ -17,17 +18,19 @@ function createHabitStreaks(data) {
   }
   return cols;
 }
+
 const Streaks = () => {
   const [habitsDatePicker, setHabitsDatePicker] = useState({
     value: {
       start: new Date(2021, 5, 2),
-      end: new Date(2021, 5, 9),
+      end: new Date(2021, 5, 8),
     },
   });
 
   const habitsDateChange = (event) => {
     setHabitsDatePicker({ value: event.target.value });
   };
+
   const [habitsData, setHabitsData] = useState([
     {
       col: "#ff0000",
@@ -39,10 +42,6 @@ const Streaks = () => {
     },
     {
       col: "#00FFB2",
-      streak: [1, 1, 1, 1, 1, 1, 1],
-    },
-    {
-      col: "#F54CB1",
       streak: [0, 0, 0, 1, 1, 0, 1],
     },
   ]);
@@ -67,7 +66,7 @@ const Streaks = () => {
         <div className="habits__panelbar">
           <PanelBar>
             <PanelBarItem expanded={true} title="Habit Categories">
-              <PanelBarItem selected={true} title={"All"} />
+              <PanelBarItem title={"All"} />
               <PanelBarItem title={"Sports"} />
               <PanelBarItem title={"Mental Health"} />
               <PanelBarItem title={"Work"} />
@@ -92,4 +91,5 @@ const Streaks = () => {
     </div>
   );
 };
+
 export default Streaks;

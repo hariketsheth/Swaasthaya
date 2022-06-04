@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Demo 1</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <form action="" method="post">
+      <input
+        type="text"
+        name="demo1"
+        id="demo1"
+        placeholder="Enter your Username"
+        value=""
+      />
+      <input type="text" name="demo2" id="demo2" />
+      <input type="number" name="demo3" id="demo3" />
+      <input type="number" name="demo4" id="demo4" />
+      <input type="submit" />
+    </form>
+    <script>
+      var var1 = document.getElementById("demo1").value;
+      var var2 = document.getElementById("demo2").value;
+      var var3 = document.getElementById("demo3").value;
+      document.getElementById("demo4").value = var3 * 3;
+    </script>
+  </body>
+</html>

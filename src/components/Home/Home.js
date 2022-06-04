@@ -1,13 +1,19 @@
-import "./Home.css";
 import { Button } from "@progress/kendo-react-buttons";
 import { Ripple } from "@progress/kendo-react-ripple";
+
 import { useHistory } from "react-router";
 import { motion } from "framer-motion";
+import "./Home.css";
+import { useAuth } from "../../contexts/AuthContext";
+import { useState } from "react";
+import { Error } from "@progress/kendo-react-labels";
+
 const Home = () => {
   const history = useHistory();
   const showSignInPage = () => {
-    history.push("/signin");
+    history.push("/login");
   };
+
   const showRegisterPage = () => {
     history.push("/register");
   };
@@ -43,6 +49,20 @@ const Home = () => {
     },
   };
 
+  const [authErrorMessage, setAuthErrorMessage] = useState("");
+  const { login } = useAuth();
+
+  async function handleDemo() {
+    login("test@gmail.com", "test1234")
+      .then((userCredential) => {
+        var user = userCredential.user;
+        history.push("/user");
+      })
+      .catch((error) => {
+        setAuthErrorMessage(error.message);
+      });
+  }
+
   return (
     <motion.div>
       <div className="home__container">
@@ -72,7 +92,7 @@ const Home = () => {
             className="home__text-top"
           >
             <div className="top__line-one">
-              <h1>Swaasthaya</h1>
+              <h3>Swaasthaya</h3>
             </div>
           </motion.div>
           <motion.div
@@ -96,8 +116,14 @@ const Home = () => {
           animate="animate"
           className="auth__buttons"
         >
+          <Error>{authErrorMessage}</Error>
           {/* Add ripple effect for extra pizzazz */}
           <Ripple>
+            <div className="buttons__two">
+              <Button className="login-with-google" onClick={handleDemo}>
+                Click Here for Demo
+              </Button>
+            </div>
             <div className="buttons__one">
               <Button
                 className="auth-button"
@@ -114,13 +140,11 @@ const Home = () => {
                 Register
               </Button>
             </div>
-            <div className="buttons__two">
-              <Button className="login-with-google">Login with Google</Button>
-            </div>
           </Ripple>
         </motion.div>
       </div>
     </motion.div>
   );
 };
+
 export default Home;

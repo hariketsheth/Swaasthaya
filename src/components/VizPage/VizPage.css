@@ -1,0 +1,44 @@
+.viz__page {
+  background-color: #f9e2b7;
+  padding-bottom: 200px;
+  min-height: 80vh;
+}
+
+.charts__wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-height: 90vh;
+}
+
+.k-chart-surface > svg {
+  border-radius: 10px;
+}
+
+.line__chart {
+  position: relative;
+  margin: 20px 0 20px 20px;
+  /* width: 46vw; */
+}
+
+.longest__streaks {
+  position: relative;
+  min-width: 20vw;
+  max-width: 50vw;
+  min-height: 20vh;
+  margin-top: 20px;
+}
+
+.current__streaks {
+  position: relative;
+  min-width: 20vw;
+  max-width: 50vw;
+  min-height: 20vh;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.column__chart {
+  position: relative;
+  transform: translate(0, -45vh);
+  margin-left: 20px;
+}

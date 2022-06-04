@@ -1,76 +1,76 @@
 .overlay__card .k-dialog {
-    background-color: white;
-    min-height: 450px;
-    min-width: 400px;
+  background-color: white;
+  min-height: 450px;
+  min-width: 400px;
 }
 
 .overlay__card .k-window-title {
-    font-family: 'Arvo';
-    justify-content: center;
-    border-bottom: 2px solid black;
+  font-family: "Arvo";
+  justify-content: center;
+  border-bottom: 2px solid black;
 }
 
 .overlay__card-textarea .k-textarea {
-    background-color: rgb(95, 173, 247);
-    color: white;
-    border: none;
-    border-radius: 15px;
-    padding: 10px 0;
+  background-color: rgb(95, 173, 247);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 0;
 }
 
 .overlay__card .k-textarea:hover {
-    background-color: #a5cbf7;
-    color: black;
+  background-color: #a5cbf7;
+  color: black;
 }
 
 .multiselect__area {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .k-window-action {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .textarea__hints {
-    display: flex;
-    width: 350px;
+  display: flex;
+  width: 350px;
 }
 
 .textarea__hints > div {
-    width: 100%;
-    justify-self: flex-end;
+  width: 100%;
+  justify-self: flex-end;
 }
 
-.habit__buttons { 
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
+.habit__buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .save-habbit__button {
-    background-color: #22B573;
-    color: white;
-    border-radius: 10px;
+  background-color: #22b573;
+  color: white;
+  border-radius: 10px;
 }
 
 .habit__switch {
-    margin-top: 25px;
-    text-align: center;
+  margin-top: 25px;
+  text-align: center;
 }
 
 .react-switch-bg {
-    align-items: center;
+  align-items: center;
 }
 
 .textarea__hints .k-form-hint {
-    position: absolute;
-    right: 30px;
+  position: absolute;
+  right: 30px;
 }
 
 .k-multiselect .k-multiselect-wrap .k-button {
-    background-color: #f9e2b7;
+  background-color: #f9e2b7;
 }
 
-.k-animation-container{
-    z-index: 10003;
+.k-animation-container {
+  z-index: 10003;
 }

@@ -10,7 +10,7 @@ import GardenPage from "./components/GardenPage/GardenPage";
 import Streaks from "./components/Streaks/Streaks";
 import { AuthProvider } from "./contexts/AuthContext";
 import "./App.css";
-import SideBar from "./contexts/SideBar/SideBar";
+import SideBar from "./components/SideBar/SideBar";
 import VizPage from "./components/VizPage/VizPage";
 import { useEffect, useState } from "react";
 import { db } from "./firebase";

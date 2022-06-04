@@ -20,6 +20,11 @@
   /* width: 46vw; */
 }
 
+.line__chart .k-card {
+  /* width: 100%; */
+  /* width: 23vw; */
+}
+
 .longest__streaks {
   position: relative;
   min-width: 20vw;

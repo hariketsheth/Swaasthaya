@@ -7,11 +7,11 @@ import tree_three from "../garden_assets/tree_three.png";
 import tree_four from "../garden_assets/tree_four.png";
 
 export {
-  land_both,
-  land_light,
-  land_dark,
-  tree_one,
-  tree_two,
-  tree_three,
-  tree_four,
-};
+    land_both,
+    land_light,
+    land_dark,
+    tree_one,
+    tree_two,
+    tree_three,
+    tree_four
+}

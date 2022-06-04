@@ -6,6 +6,8 @@ import SignIn from "./components/SignIn/SignIn";
 import Register from "./components/Register/Register";
 import { AnimatePresence } from "framer-motion";
 import DailyHabits from "./components/DailyHabits/DailyHabits";
+import GardenPage from "./components/GardenPage/GardenPage";
+import Streaks from "./components/Streaks/Streaks";
 
 function App() {
   const location = useLocation();
@@ -29,6 +31,8 @@ function App() {
           <Route path="/signIn" component={SignIn} />
           <Route path="/register" component={Register} />
           <Route path="/user" component={DailyHabits} />
+          <Route path="/garden" component={GardenPage} />
+          <Route path="/habit-streak" component={Streaks} />
         </Switch>
       </AnimatePresence>
     </div>

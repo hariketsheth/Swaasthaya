@@ -1,16 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&display=swap");
+
 .habits_container h1 {
   margin-top: 30px;
-  margin-left: 50px;
+  margin-right: 50px;
   font-family: "Arvo";
   align-self: center;
+  border-bottom: 1px solid black;
 }
+
 .habits_container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: white; */
   min-height: 100vh;
+  width: 80vw;
 }
 
 ol.habit__list > .k-card::before ol.habit__list > .k-card {
@@ -22,4 +25,70 @@ ol.habit__list > .k-card::before ol.habit__list > .k-card {
 ol.habit__list {
   margin: 1.75rem 0;
   padding-left: 1rem;
+}
+
+.daily__habits-input {
+  display: flex;
+}
+
+.daily__habits-input .k-form-hint {
+  font-family: "Arvo";
+  margin-right: 10px;
+}
+
+.daily__habits-input .k-textbox {
+  font-family: "Arvo";
+  background-color: white;
+  width: 500px;
+  padding: 0 20px;
+  margin-right: 10px;
+}
+
+.daily__habits-input .k-button {
+  background-color: #3963ed;
+  color: white;
+  border-radius: 10px;
+  height: 60px;
+}
+
+.daily__habit-wrapper {
+  display: flex;
+  align-items: center;
+  height: min-content;
+}
+
+.habit__card-delete {
+  height: 30px;
+  margin-left: 25px;
+}
+
+.delete__habit-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.delete__habit-del {
+  background-color: #22b573;
+  color: white;
+  border-radius: 10px;
+}
+
+.delete__habit-cancel {
+  background-color: #3963ed;
+  color: white;
+  border-radius: 10px;
+}
+
+.circular__gauge {
+  position: fixed;
+  right: 0;
+  height: 200px;
+  align-self: center;
+  margin-right: 5vw;
+  width: 5vw;
+  background-color: white;
+  padding: 10px 10px 20px 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: -0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.3);
 }

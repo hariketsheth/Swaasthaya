@@ -12,10 +12,7 @@ const Tile = ({ src, x, y, z, ybase }) => {
       className="tile"
       style={{ left: `${x}%`, top: `${ybase}%`, zIndex: z }}
     />
-  ) : (
-    <div></div>
-  );
-  console.log(src, src.includes("tree"));
+  ) : null;
   return (
     <>
       {additional_img}

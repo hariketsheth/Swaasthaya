@@ -1,4 +1,5 @@
 import React from "react";
+
 const Square = ({ children }) => {
   return (
     <div
@@ -16,4 +17,5 @@ const Square = ({ children }) => {
     </div>
   );
 };
+
 export default Square;

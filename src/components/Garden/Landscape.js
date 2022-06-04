@@ -12,14 +12,13 @@ const Landscape = () => {
     }
   }
   const yOffset = (100 / WORLD_SIZE) * (TILE_ASPECT_RATIO / 2.6);
-
   return (
     <>
       {tiles.map((row, y) => {
-        const yBase = yOffset * y + 25;
+        const yBase = yOffset * y + 20;
         const xBase = 50 - (100 / (4 * WORLD_SIZE)) * y;
         return row.map((tile, x) => {
-          const z = x + 100;
+          const z = x + 1;
           const xAbs = xBase + (50 / (2 * WORLD_SIZE)) * x;
           const yAbs = yBase + yOffset * x;
           let src;
@@ -34,5 +33,4 @@ const Landscape = () => {
     </>
   );
 };
-
 export default React.memo(Landscape);

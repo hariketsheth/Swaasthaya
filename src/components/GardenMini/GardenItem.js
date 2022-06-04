@@ -1,6 +1,4 @@
 import React from "react";
-import { useDrag } from "react-dnd";
-import { GardenTypes } from "./GardenTypes";
 
 const gardenItemStyle = {
   fontSize: 18,
@@ -8,19 +6,18 @@ const gardenItemStyle = {
   cursor: "move",
 };
 
-const GardenItem = () => {
-  const [{ isDragging }, drag] = useDrag(() => ({
-    type: GardenTypes.TREE,
-    collect: (monitor) => ({
-      isDragging: !!monitor.isDragging(),
-    }),
-  }));
-
-  return (
-    <div ref={drag} style={{ ...gardenItemStyle }}>
-      🟢
-    </div>
-  );
+const GardenItem = ({ gardenItemName }) => {
+  var itemIcon = "";
+  if (gardenItemName === "tree_one") {
+    itemIcon = "🟢";
+  } else if (gardenItemName === "tree_two") {
+    itemIcon = "🟣";
+  } else if (gardenItemName === "tree_three") {
+    itemIcon = "🟠";
+  } else if (gardenItemName === "tree_four") {
+    itemIcon = "🔴";
+  }
+  return <div style={{ ...gardenItemStyle }}>{itemIcon}</div>;
 };
 
 export default GardenItem;

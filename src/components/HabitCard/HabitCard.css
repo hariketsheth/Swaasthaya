@@ -1,20 +1,20 @@
 .habit__card {
-  border-radius: 5px;
-  counter-increment: gradient-counter;
-  min-height: 3rem;
-  width: 500px;
-  margin: 10px 0;
-  position: relative;
+    border-radius: 5px;
+    counter-increment: gradient-counter;
+    min-height: 3rem;
+    width: 500px;
+    margin: 10px 0;
+    position: relative;
 }
 
 .habit__card:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .habit__cardheader {
-  display: flex;
-  justify-content: space-between;
-  font-family: "Arvo" !important;
-  font-size: 20px;
-  height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Arvo' !important;
+    font-size: 20px;
+    height: fit-content;
 }

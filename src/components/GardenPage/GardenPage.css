@@ -1,16 +1,16 @@
 .garden__page {
-  transform: translate(-16vw);
-  width: 100vw;
-  min-height: 100vh;
-  background-color: #f9e2b7;
+    transform: translate(-16vw);
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #f9e2b7;
 }
 
 .mini__garden {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 250px;
-  height: 250px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 250px;
+    height: 250px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }

@@ -1,119 +1,120 @@
 .streaks__main {
-  background-color: #f9e2b7;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 93vh;
+    background-color: #f9e2b7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 93vh;
 }
 
+
 .streaks__middle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 60vw;
-  height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+    height: 100%;
 }
 
 .date__hover {
-  text-align: center;
+    text-align: center;
 }
 
 .title__middle {
-  position: relative;
-  width: 60vw;
-  font-family: "Arvo";
-  display: flex;
-  justify-content: space-between;
-  justify-self: flex-start;
+    position: relative;
+    width: 60vw;
+    font-family: 'Arvo';
+    display: flex;
+    justify-content: space-between;
+    justify-self: flex-start;
 }
 
 .title__middle-habit {
-  position: relative;
-  bottom: 5vh;
-  margin-left: 50px;
+    position: relative;
+    bottom: 5vh;
+    margin-left: 50px;
 }
 
 .title__middle-date {
-  position: relative;
-  bottom: 5vh;
-  margin-left: -10px;
+    position: relative;
+    bottom: 5vh;
+    margin-left: -10px;
 }
 
 .streaks__right {
-  margin-right: 20px;
-  padding: 20px 0 30px 0;
-  border-radius: 10px;
-  background-color: #5a2727;
+    margin-right: 20px;
+    padding: 20px 0 30px 0;
+    border-radius: 10px;
+    background-color: #5A2727;
 
-  min-width: 20vw;
+    min-width: 20vw;
 }
 
 .habit__streaks {
-  margin: 10px;
-  max-width: fit-content;
+    margin: 10px;
+    max-width: fit-content;
 }
 
 .habits__panelbar {
-  margin: 0px 20px 10px 20px;
+    margin: 0px 20px 10px 20px;
 }
 
 .habits__panelbar .k-panelbar {
-  box-shadow: -1px 4px 20px rgba(0, 0, 0, 1);
-  border-radius: 5px;
-  padding-bottom: 10px;
+    box-shadow:-1px 4px 20px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    padding-bottom: 10px;
 }
 
 .habits__panelbar .k-link {
-  margin: 10px;
-  border-radius: 10px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 .k-daterangepicker-wrap {
-  display: flex !important;
-  flex-direction: column;
-  align-items: center;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
 }
 
 .k-dateinput-wrap > input {
-  font-family: "Arvo";
+    font-family: 'Arvo';
 }
 
 .habits__datepicker {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .habits__datepicker h3 {
-  margin-top: 8px;
-  color: white;
-  text-align: center;
-  font-family: "Arvo";
+    margin-top: 8px;
+    color: white;
+    text-align: center;
+    font-family: 'Arvo';
 }
 
 .datepicker__header {
-  background-color: #ff4081;
-  width: 200px;
-  height: 40px;
-  border-radius: 10px;
-  margin-bottom: 10px;
+    background-color: #ff4081;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .habits__datepicker-card > .k-card {
-  box-shadow: -1px 4px 20px rgba(0, 0, 0, 1);
-  margin: 0px 20px 5px 20px;
-  border-radius: 10px;
-  padding: 30px 10px 40px 10px;
+    box-shadow:-1px 4px 20px rgba(0, 0, 0, 1);
+    margin: 0px 20px 5px 20px;
+    border-radius: 10px;
+    padding: 30px 10px 40px 10px;
 }
 
 .streak__label {
-  background-color: #f9e2b7;
-  margin: 0px 10px 5px 10px;
-  padding-top: 10px;
-  border-radius: 5px;
-  box-shadow: -0.1rem 0.15rem 0rem rgba(0, 0, 0, 0.3);
+    background-color: #f9e2b7;
+    margin: 0px 10px 5px 10px;
+    padding-top: 10px;
+    border-radius: 5px;
+    box-shadow: -0.1rem 0.15rem 0rem rgba(0, 0, 0, 0.3);
 }
 
 .streak__label:hover {
-  opacity: 0.5;
+    opacity: 0.5;
 }

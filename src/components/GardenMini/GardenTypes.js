@@ -1,3 +1,3 @@
 export const GardenTypes = {
-  TREE: "tree",
-};
+    TREE: 'tree',
+}

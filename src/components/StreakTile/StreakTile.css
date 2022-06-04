@@ -1,6 +1,6 @@
 .streak__tile {
-  border: 1px solid #fbf3f3;
-  box-sizing: border-box;
-  box-shadow: inset 4px 4px 3px rgba(0, 0, 0, 0.25);
-  border-radius: 12px;
+    border: 1px solid #FBF3F3;
+    box-sizing: border-box;
+    box-shadow: inset 4px 4px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
 }

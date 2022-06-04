@@ -1,10 +1,11 @@
 .App {
-  background-color: #fdf074;
+  background-color: #f9e2b7;
 }
 
 ::-webkit-scrollbar {
   width: 1rem;
 }
+
 ::-webkit-scrollbar-track {
   background-image: linear-gradient(
     109.6deg,
@@ -12,6 +13,7 @@
     rgba(93, 52, 236, 1) 100.2%
   );
 }
+
 ::-webkit-scrollbar-thumb {
   background: #f4f4ff;
   border-radius: 10px;

@@ -1,5 +1,4 @@
 import React from "react";
-
 const Square = ({ children }) => {
   return (
     <div
@@ -8,7 +7,8 @@ const Square = ({ children }) => {
         backgroundColor: "#ffffff",
         width: "100%",
         height: "100%",
-        border: "1px solid black",
+        borderLeft: "2px dotted black",
+        borderTop: "2px dotted black",
         opacity: 0.4,
       }}
     >
@@ -16,5 +16,4 @@ const Square = ({ children }) => {
     </div>
   );
 };
-
 export default Square;

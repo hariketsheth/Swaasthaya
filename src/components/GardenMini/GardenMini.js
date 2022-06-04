@@ -2,11 +2,9 @@ import React, { useEffect, useState } from "react";
 import GardenItem from "./GardenItem";
 import Square from "./Square";
 import "./GardenMini.css";
-
 const GardenMini = ({ itemPosition }) => {
   const [coordinates, setCoordinates] = useState([...itemPosition]);
   const [squares, setSquares] = useState([]);
-
   useEffect(() => {
     let tempSquares = [];
     let [itemX, itemY] = coordinates;
@@ -16,7 +14,6 @@ const GardenMini = ({ itemPosition }) => {
       const y = Math.floor(i / 10);
       const isitemHere = x === itemX && y === itemY;
       const piece = isitemHere ? <GardenItem /> : null;
-
       tempSquares.push(
         <div
           onClick={() => handleSquareClick(x, y)}

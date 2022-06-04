@@ -233,9 +233,8 @@ const DailyHabits = () => {
           </div>
           <motion.div
             onClick={() => deleteHabitWrapper(habit)}
-            className="delete__icon"
             whileHover={{ scale: 1.1 }}
-            className="habit__card-delete"
+            className="elete__icon habit__card-delete"
             style={{
               backgroundColor: "#c5221d",
               width: "20px",

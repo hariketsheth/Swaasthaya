@@ -1,95 +1,228 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import StreakTile from "../StreakTile/StreakTile";
-import { Card, PanelBar, PanelBarItem } from "@progress/kendo-react-layout";
-import { DateRangePicker } from "@progress/kendo-react-dateinputs";
+import { PanelBar, PanelBarItem } from "@progress/kendo-react-layout";
 import "./Streaks.css";
-function createHabitStreaks(data) {
-  console.log(data);
-  let cols = [];
-  for (let i = 0; i < data.length * data[0].streak.length; i++) {
-    let clr;
-    console.log(i);
-    clr = data[Math.floor(i / 7)].streak[i % 7]
-      ? data[Math.floor(i / 7)].col
-      : "#e0e0e0";
-    console.log(clr);
-    cols.push(<StreakTile key={i} color={clr} />);
-  }
-  return cols;
-}
-const Streaks = () => {
-  const [habitsDatePicker, setHabitsDatePicker] = useState({
-    value: {
-      start: new Date(2021, 5, 2),
-      end: new Date(2021, 5, 9),
-    },
-  });
+import HabitAppBar from "../HabitAppBar/HabitAppBar";
+import { auth, db } from "../../firebase";
+import { useHistory } from "react-router";
 
-  const habitsDateChange = (event) => {
-    setHabitsDatePicker({ value: event.target.value });
-  };
-  const [habitsData, setHabitsData] = useState([
-    {
-      col: "#ff0000",
-      streak: [1, 1, 1, 1, 0, 0, 0],
-    },
-    {
-      col: "#00A3FF",
-      streak: [1, 0, 1, 1, 1, 1, 1],
-    },
-    {
-      col: "#00FFB2",
-      streak: [1, 1, 1, 1, 1, 1, 1],
-    },
-    {
-      col: "#F54CB1",
-      streak: [0, 0, 0, 1, 1, 0, 1],
-    },
-  ]);
+const Streaks = ({ allLabels }) => {
+  const [appbarDisplay, setAppbarDisplay] = useState("");
+  const [currentUser, setCurrentUser] = useState();
+  const [hoverHabit, setHoverHabit] = useState("Hover to see habit name");
+  const [habitsData, setHabitsData] = useState([]);
+  const history = useHistory();
 
-  return (
-    <div className="streaks__main">
-      <div className="streaks__left">
-        <h2>hamburger menu</h2>
-      </div>
-      <div className="streaks__middle">
-        <div className="title__middle">
-          <h1>Your Habits Streak</h1>
-        </div>
-        <div className="habits__middle">
-          <div className="date__hover">
-            <h2>May 1</h2>
+  const today = new Date(Date.now());
+  const [currDate, setCurrDate] = useState(today);
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((authUser) => {
+      if (authUser) {
+        setCurrentUser(authUser);
+        setAppbarDisplay(authUser.displayName);
+
+        db.collection("users")
+          .doc(authUser.uid)
+          .collection("dailyHabits")
+          .orderBy("timestamp", "desc")
+          .onSnapshot((snapshot) => {
+            setHabitsData(
+              snapshot.docs.map((doc) => {
+                var last_seven = doc.data().habitHistory;
+                last_seven = [...last_seven];
+                last_seven = last_seven.slice(
+                  Math.max(last_seven.length - 7, 0)
+                );
+
+                return {
+                  id: doc.id,
+                  habit: doc.data().habit,
+                  col: "#" + doc.data().habitCol,
+                  habitLabels: doc.data().habitLabels,
+                  streak: last_seven,
+                };
+              })
+            );
+          });
+      } else {
+        history.push("/");
+      }
+    });
+    return unsubscribe;
+  }, []);
+
+  const [label, setLabel] = useState("all");
+  const [labels, setLabels] = useState([]);
+  function createHabitStreaks(data) {
+    let cols = [];
+
+    if (data.length) {
+      let div = data[0].streak.length;
+      for (let i = 0; i < data.length * data[0].streak.length; i++) {
+        let clr;
+        if (label !== "all") {
+          var labs = [...data[Math.floor(i / div)].habitLabels];
+          var isPart = false;
+          for (let h = 0; h < labs.length; h++) {
+            if (labs[h] === label) {
+              isPart = true;
+              break;
+            }
+          }
+          if (isPart) {
+            clr = data[Math.floor(i / div)].streak[i % div]
+              ? "#231123"
+              : "#e0e0e0";
+          } else {
+            clr = data[Math.floor(i / div)].streak[i % div]
+              ? data[Math.floor(i / div)].col
+              : "#e0e0e0";
+          }
+        } else {
+          clr = data[Math.floor(i / div)].streak[i % div]
+            ? data[Math.floor(i / div)].col
+            : "#e0e0e0";
+        }
+
+        cols.push(
+          <div
+            key={i}
+            onMouseOver={() => {
+              setHoverHabit(data[Math.floor(i / div)].habit);
+              var d = new Date();
+              setCurrDate(
+                new Date(d.setDate(today.getDate() - (6 - Math.floor(i % div))))
+              );
+            }}
+            onMouseOut={() => {
+              setHoverHabit("Hover to see habit name");
+              setCurrDate(today);
+            }}
+          >
+            <StreakTile
+              h={Math.max(10, 100 - 2 * div)}
+              w={Math.max(10, 100 - 2 * div)}
+              key={i}
+              color={clr}
+            />
           </div>
-          <div className="habit__streaks">{createHabitStreaks(habitsData)}</div>
-        </div>
+        );
+      }
+    }
+    return cols;
+  }
+
+  useEffect(() => {
+    const temp_labels = [];
+    if (allLabels.length) {
+      var sel = false;
+      allLabels[0].forEach(function (lab, idx) {
+        if (lab === label) {
+          sel = true;
+        } else {
+          sel = false;
+        }
+        temp_labels.push(
+          <div
+            className="streak__label"
+            style={{ height: "30px", fontFamily: "Arvo" }}
+            onClick={() => {
+              setLabel(lab);
+              createHabitStreaks(habitsData);
+            }}
+          >
+            <PanelBarItem key={idx} title={lab} selected={sel} />
+          </div>
+        );
+      });
+
+      setLabels([...temp_labels]);
+    }
+    // console.log(label);
+  }, [label]);
+
+  const options = {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  };
+  return (
+    <>
+      <HabitAppBar userName={appbarDisplay} />
+      <div
+        style={{
+          opacity: 0.9,
+          left: "20vw",
+          top: "4vh",
+          boxShadow: "-0.1rem 0.15rem 0rem rgba(0, 0, 0, 0.3)",
+          width: "20vw",
+          textAlign: "center",
+          position: "relative",
+          marginTop: "5px",
+          backgroundColor: "white",
+          padding: "10px",
+          borderRadius: "5px",
+        }}
+      >
+        <h2 style={{ fontFamily: "Arvo" }}>7-Day Habit Streaks</h2>
       </div>
-      <div className="streaks__right">
-        <div className="habits__panelbar">
-          <PanelBar>
-            <PanelBarItem expanded={true} title="Habit Categories">
-              <PanelBarItem selected={true} title={"All"} />
-              <PanelBarItem title={"Sports"} />
-              <PanelBarItem title={"Mental Health"} />
-              <PanelBarItem title={"Work"} />
-              <PanelBarItem title={"Coding"} />
-            </PanelBarItem>
-          </PanelBar>
-        </div>
-        <div className="habits__datepicker-card">
-          <Card>
-            <div className="habits__datepicker">
-              <div className="datepicker__header">
-                <h3>Habit Timeline</h3>
-              </div>
-              <DateRangePicker
-                value={habitsDatePicker.value}
-                onChange={habitsDateChange}
-              />
+      <div className="streaks__main">
+        <div className="streaks__middle">
+          <div className="title__middle">
+            <div className="title__middle-habit">
+              <h2 style={{ borderBottom: "1px solid black" }}>{hoverHabit}</h2>
             </div>
-          </Card>
+            <div className="title__middle-date">
+              <h2>Date: {currDate.toLocaleDateString(undefined, options)}</h2>
+            </div>
+          </div>
+          <div className="habits__middle">
+            <div
+              className="habit__streaks"
+              style={{
+                display: "grid",
+                gridTemplate: `repeat(${habitsData.length}, auto) / repeat(${
+                  habitsData.length ? habitsData[0].streak.length : 0
+                }, auto)`,
+                gridGap: "0.1rem",
+              }}
+            >
+              {createHabitStreaks(habitsData)}
+            </div>
+          </div>
+
+          <div
+            style={{
+              boxShadow: "-0.1rem 0.15rem 0rem rgba(0, 0, 0, 0.3)",
+              position: "relative",
+              marginTop: "5px",
+              backgroundColor: "white",
+              padding: "10px",
+              borderRadius: "5px",
+            }}
+          >
+            <h3 style={{ fontFamily: "Arvo" }}>Selected Label : {label} </h3>
+          </div>
+        </div>
+
+        <div className="streaks__right">
+          <div className="habits__panelbar">
+            <PanelBar>
+              <PanelBarItem
+                expanded={true}
+                selected={true}
+                title="Habit Categories"
+              >
+                {labels}
+              </PanelBarItem>
+            </PanelBar>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
+
 export default Streaks;

@@ -7,6 +7,14 @@
 
 ![separate](assets/separate.jpeg)
 
+<br>
+
+[![Deploy](https://img.shields.io/badge/Test%20Here-Swaasthaya-blue?style=for-the-badge&logo=github)](https://swaasthaya-16620.web.app/)
+[![Devpost](https://img.shields.io/badge/MLH%20Orientation%20Hackathon-Click%20Here-yellow?style=for-the-badge&logo=devpost)](https://devpost.com/software/swaasthaya)
+
+
+<br><br>
+
 ## 💡 Inspiration
 > _"There is hope, even when your brain cells tell there isn't"_ <br>
 > _"You don't have to be great to start, but you should start to be great"_
@@ -64,4 +72,6 @@ We are using GitHub for the following reasons:
 - How to work with Holaplex, Web3, NFTs. Had a great learning experience
 
 ## 🚀 What's next for Swaasthaya
-
+1. `Visualising Support Networks`- We are going to implement the idea as a mental health community forum, where patients post their problems. The support extended by community volunteers and messages sent by them is visualized as a growing forest, each tree representing a supporter. 
+2. `Meditation Room`- We are going to provide a virtual meditation room where individuals can select soothing sound tracks from a collection of tracks including sounds of nature including rain, wind, flowing river, rustling of forest, Tibetan flute etc. Users can choose a combination of tracks and control volume of each track to create a custom environment by simultaneously playing them, creating an immersive experience  during meditation sessions.
+3. `Semantic and Mood Analysis`- We would conducting an analysis and based on the Analysis, users would be given certain advantages and the project efficiency would increase because icluding this would enhance our project

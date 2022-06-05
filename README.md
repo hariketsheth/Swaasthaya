@@ -11,14 +11,32 @@
 > _"There is hope, even when your brain cells tell there isn't"_ <br>
 > _"You don't have to be great to start, but you should start to be great"_
 
-- These two quotes alongwith the exponential rise in the Mental Health, anxiety, depression cases (even Post COVID) - our team [[Hariket](https://github.com/hariketsheth), [Zac](https://github.com/dragochar)] decided to work on a Mental Health App that does give users options to track their day-to-day activities. 
-- Since the mental health issues are increasing at an exponential rate, we got motivated to build an application which is relief to such people. 
-- Without having this information getting spread or broadcasted thereby maintaining complete user privacy.
-## 💻 What it does
+- These two quotes alongwith the exponential rise in the Mental Health, anxiety, depression cases (even `Post COVID`) - our team [[Hariket](https://github.com/hariketsheth), [Zac](https://github.com/dragochar)] decided to work on a Mental Health App that does give users options to track their day-to-day activities. 
+- Online technologies have a lot of potential for expanding therapeutic intervention delivery methods to assist people cope with increasingly widespread mental diseases like anxiety and depression. 
+- `Cognitive reappraisal`, for example, is a technique that entails altering one's viewpoint on unpleasant ideas in order to enhance one's emotional state.
+- The mental health of `at risk` populations, including those with pre-existing mental health disorders, has also been raised as a cause for worry even after the pandemic. 
+- Apps can help patients gain autonomy, provide an undisrupted sequence of contacts over time, demonstrate evidence-based benefits for patients with ranges from mild and mild to moderate symptoms, are easy to use, can be used to coordinate services and information within an episode of care, and are generally cost-effective.
+- At some point in their lives, more than half of people will be diagnosed with a mental disease or problem.
+	- `1 in 5 Americans` live with a mental health condition.
+		- This means that either you or someone you know has been impacted.
+	- `1 in every 20 Americans` is living with a serious mental health condition like schizophrenia, bipolar disorder, or long-term recurring major depression.
+	- 50% of all lifetime `mental illness begins by age 14`, and `75% by age 24.`
 
+
+## 💻 What it does
+Swaasthaya (meaning: Health in Hindi [India]) is a web application that can:
+- Be used a Habit Tracker in a gamified manner
+- Users earn points based on the completion of certain habits they have added
+- A streak is maintained for each habit separately. A proper analysis is carried out
+- The analysis conducted is not only important for making judgements at the backend but is also shown to the user. 
+- Based on the XP(Points) and level, the Users are rewarded with different assets, with which they can design their own garden
 
 ## ⚙️ How we built it
-
+- Figma: For Designing and Prototyping
+- React JS: For FrontEnd
+- CSS: For Styling
+- Firebase: For Database 
+- IEEE Xplore and Springer: For Research and Facts on Mental Health
 
 ## 🌳 Integration 
 
@@ -26,19 +44,24 @@
 ## 🤝 Most Creative Use of GitHub
 We are using GitHub for the following reasons:
 
-1. **Collaboration:** GitHub makes it easy to share code with others and helps a lot in collaboration.
-2. **Agile Kanban Board:** We also used GitHub for planning and keeping track of our project and its progress with the help of the GitHub project management tool.
-3. **Implementing the workflow:** GitHub makes it easy to implement the workflows and makes the version control quite easy and reliable.
-4. **Open Source project:** Deploying the project on GitHub helped us to get the project deployed on the network to be accessed by other people.
-5. **Using PRs and Issues:** We are doing multiple PRs and building multiple Issues to keep on track of the project.
+1. **`Collaboration:`** GitHub makes it easy to share code with others and helps a lot in collaboration.
+2. **`Agile Kanban Board:`** We also used GitHub for planning and keeping track of our project and its progress with the help of the GitHub project management tool.
+3. **`Implementing the workflow:`** GitHub makes it easy to implement the workflows and makes the version control quite easy and reliable.
+4. **`Open Source project:`** Deploying the project on GitHub helped us to get the project deployed on the network to be accessed by other people.
+5. **`Using PRs and Issues:`** We are doing multiple PRs and building multiple Issues to keep on track of the project.
+6. **`Implementing the CI/CD workflow:`** GitHub makes it easy to implement the CI/CD workflow and makes the deployment process easy.
 
 ## 🧠 Challenges we ran into
-
+- Due to the difference in the time zones and works, it was a bit difficult to fix a common time and collaborate but we managed to get the project done in time.
+- None of the teammates were much acuqainted with usage of Holaplex and how to incorporate it in the idea, we had to do research while working on the project.
 
 ## 🏅 Accomplishments that we're proud of
-
+- Completing the project in the given time frame.
+- Implementing the Brainstormed idea, deploying it successfully and integrating it.
 
 ## 📖 What we learned
-
+- Collaboration with other developers.
+- How to work with Holaplex, Web3, NFTs. Had a great learning experience
 
 ## 🚀 What's next for Swaasthaya
+

@@ -51,7 +51,7 @@ const Register = () => {
                 animate="animate"
                 exit="exit"
             >
-                <img src="assets/loving.png" alt=""/>
+                <img src="assets/homee.png" alt=""/>
             </motion.div>
             <motion.div 
                 variants={modalVariants}

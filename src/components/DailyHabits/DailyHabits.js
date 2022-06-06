@@ -15,6 +15,7 @@ import './DailyHabits.css';
 import firebase from 'firebase';
 import { useHistory } from 'react-router';
 import OverlayCard from '../OverlayCard/OverlayCard';
+import SolanaTPSTracker from '../SolanaTPSTracker/SolanaTPSTracker';
 import { motion } from 'framer-motion';
 
   
@@ -230,7 +231,7 @@ const DailyHabits = () => {
                         >
                             <HabitCard key={habit.id} title={habit.habit} bgc={habit.habitHistory[habit.habitHistory.length - 1] ? "#cdf737" : "#ffffff"} lab={habit.habitLabels} />
                         </div>
-                        <motion.div onClick={() => deleteHabitWrapper(habit)} className="delete__icon" whileHover={{ scale: 1.1 }} className="habit__card-delete" style={{ backgroundColor:"#c5221d", width: "20px", borderRadius: "5px", textAlign: "center", padding: "5px 10px 5px 10px"}}>
+                        <motion.div onClick={() => deleteHabitWrapper(habit)} whileHover={{ scale: 1.1 }} className="delete__icon habit__card-delete" style={{ backgroundColor:"#c5221d", width: "20px", borderRadius: "5px", textAlign: "center", padding: "5px 10px 5px 10px"}}>
                             <span style={{ color: "white", cursor: "pointer"}} className="k-icon k-i-delete"></span>
                         </motion.div>
                     </div>
@@ -243,6 +244,7 @@ const DailyHabits = () => {
         <div className="habits_container-wrapper" style={{display: 'flex'}}>
             <div className="habits_container">
                 <HabitAppBar userName={appbarDisplay} />
+                <SolanaTPSTracker />
                 <h1> Your daily habits...</h1>
                 <ol className="habit__list">
                     <div className="daily__habits-input">

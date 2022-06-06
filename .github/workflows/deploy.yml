@@ -21,7 +21,13 @@ jobs:
           node-version: 16.x
           cache: npm
           
-      - run: yarn
+      - name: Install dependencies - Frontend
+        run: yarn 
+        
+      - name: Install dependencies - Backend
+        working-directory: ./backend
+        run: yarn
+  
       - run: yarn run build
       - name: GitHub Action for Firebase
         uses: w9jds/firebase-action@v2.1.2

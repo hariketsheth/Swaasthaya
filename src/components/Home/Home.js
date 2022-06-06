@@ -80,7 +80,7 @@ const Home = () => {
                         animate={{ x: 0, y: 0, rotate: "-10deg" }}
                         transition={{ transition: "ease", duration: 1}}
                         className="doodle"
-                        src="assets/homee.png"
+                        src="assets/loving.png"
                         alt=""
                     />
                 </div>
@@ -108,7 +108,7 @@ const Home = () => {
                     {/* Add ripple effect for extra pizzazz */}
                     <Ripple>
                         <div className="buttons__two">
-                            <Button className="login-with-google" onClick={handleDemo}>Click Here for Demo</Button>
+                            <Button className="login-with-google">Click Here for Demo</Button>
                         </div>
                         <div className="buttons__one">
                             <Button className="auth-button" primary={true} onClick={showSignInPage}>Sign-In</Button>

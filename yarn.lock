@@ -1889,21 +1889,12 @@
   resolved "https://registry.yarnpkg.com/@progress/kendo-popup-common/-/kendo-popup-common-1.9.0.tgz#cf363f91634b364cdb20997e6f85e5cf9cbc7d8a"
   integrity sha512-03FmQtRI2le3x78N1szlhtUkOyruq9aSf2SYCoyvd72mX9V9yAbqsoKByuFDazEbjHyHFkAmj32GrimWHevLCg==
 
-"@progress/kendo-react-animation@4.14.1":
+"@progress/kendo-react-animation@4.14.1", "@progress/kendo-react-animation@^4.5.0":
   version "4.14.1"
   resolved "https://registry.yarnpkg.com/@progress/kendo-react-animation/-/kendo-react-animation-4.14.1.tgz#a8a20afa99d87bb30a3684c6f9d615e323fe6eca"
   integrity sha512-WR6G14ACJrV3V/q9v8dXJrIc3gMuZsSK1Crp7nMBssUg+tUMX/k106ZvIOFO+78J7i+a2n4Ns+DCf62cHwkKpw==
   dependencies:
     "@progress/kendo-react-common" "4.14.1"
-    prop-types "^15.6.0"
-    react-transition-group "^4.4.2"
-
-"@progress/kendo-react-animation@^5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-react-animation/-/kendo-react-animation-5.3.0.tgz#457c5eb5594c5a28a76030f91bc94d982b5a3af7"
-  integrity sha512-k9LmvdkG0r8bF2EmHQdg5pwtMPYUfh/jFemU6fQKud5Xfb6UVYHWUEnDxpT3/B2Y4xtvQh06LPTMKGo/UxJhAw==
-  dependencies:
-    "@progress/kendo-react-common" "5.3.0"
     prop-types "^15.6.0"
     react-transition-group "^4.4.2"
 
@@ -1916,23 +1907,14 @@
     "@progress/kendo-react-popup" "4.14.1"
     prop-types "^15.6.0"
 
-"@progress/kendo-react-buttons@5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-react-buttons/-/kendo-react-buttons-5.3.0.tgz#311e660ac57656ec356f526b9c26df55b0155d5b"
-  integrity sha512-M8e9KX9CyMDqcytN3kLvv4QEqE1+K616ERYMbQ2dZv/qcqck6j+VJoh7JEId84nb5TD7gIJ4Vy3mGajtPj3JAg==
-  dependencies:
-    "@progress/kendo-react-common" "5.3.0"
-    "@progress/kendo-react-popup" "5.3.0"
-    prop-types "^15.6.0"
-
-"@progress/kendo-react-charts@^5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-react-charts/-/kendo-react-charts-5.3.0.tgz#ce5d79dbdda6dd7da894aa9843d001d5acf75966"
-  integrity sha512-DMQ1eC0XSj5ky1dLh5yOoD8dzYO7oyfEO7pnLjz7rP62YjNnWnfbmYflSp01ZunkmTj4m0m3UVWW6MZPfk/6vQ==
+"@progress/kendo-react-charts@^4.6.0":
+  version "4.14.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-charts/-/kendo-react-charts-4.14.1.tgz#08d6e8a1026b444518239180338ec4f458c0734f"
+  integrity sha512-kUXSjrfhcyU3U7YB/nJZCLiXWMsbnYZtTVwn82HVDo5Q7X8IKSerrVSy92q+q9dl+TkIXUE6SifjZob8385yKg==
   dependencies:
     "@progress/kendo-charts" "^1.20.0"
-    "@progress/kendo-react-common" "5.3.0"
-    "@progress/kendo-react-popup" "5.3.0"
+    "@progress/kendo-react-common" "4.14.1"
+    "@progress/kendo-react-popup" "4.14.1"
     prop-types "^15.6.0"
 
 "@progress/kendo-react-common@4.14.1":
@@ -1943,50 +1925,42 @@
     "@progress/kendo-draggable-common" dev
     prop-types "^15.6.0"
 
-"@progress/kendo-react-common@5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-react-common/-/kendo-react-common-5.3.0.tgz#dce070fcb273d9c4d9657dfed966b3fc5100ca8d"
-  integrity sha512-HIbGI+m3ofxc6ehDY3ael/CFUvAe3yQIBMHm+WA662AsN3AbuNxPZ5wqHbhf6eq+/BtZWpkhbQrujVGy74/knA==
+"@progress/kendo-react-data-tools@^4.5.0":
+  version "4.14.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-data-tools/-/kendo-react-data-tools-4.14.1.tgz#0df5beeb6a9f75888d186d0ffba0ded6dba6fd62"
+  integrity sha512-yan2+PCQ08FfEJvWzquuTcRjOoargtV1LPARRjlSdTi2bND2Jl1mEj1n5NJhc44akje2GNnMGouhkOBDlC3fcw==
   dependencies:
-    "@progress/kendo-draggable-common" dev
+    "@progress/kendo-react-common" "4.14.1"
     prop-types "^15.6.0"
 
-"@progress/kendo-react-data-tools@^5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-react-data-tools/-/kendo-react-data-tools-5.3.0.tgz#42a3531ffa87032bc4638117f92c210e40ecbd99"
-  integrity sha512-5RDAvkgqW/UOLbJTol5kpZxPfCFD1KLq8WEsZqUXpypNAzsybb3L7pKk+M2G/5a1/15aFpcf1PNgxPJKrWY5tw==
-  dependencies:
-    "@progress/kendo-react-common" "5.3.0"
-    prop-types "^15.6.0"
-
-"@progress/kendo-react-dateinputs@^5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-react-dateinputs/-/kendo-react-dateinputs-5.3.0.tgz#1f4f5cb843980c48d9ba14ee7a1686d097b21b9c"
-  integrity sha512-uiagHX+HKJ6OPZsUtTF7TwHh/hEJVRWJ3NxOg0UxaOxdqHE2DgkxbniRqawMfg/42uszVuXMwsz4rV+V/juVyA==
+"@progress/kendo-react-dateinputs@^4.5.0":
+  version "4.14.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-dateinputs/-/kendo-react-dateinputs-4.14.1.tgz#547d7187754f7aa77e0c2cbc243cde5a5842e969"
+  integrity sha512-f8xGcCdNEvgqzSZa0AdLyfDQEFsSYNMS6N/Z5K7j72BrDqjY+Qoe+tEPbXrEMrcdfIsYN0REVj4DM4tj97epWg==
   dependencies:
     "@progress/kendo-date-math" "^1.4.0"
-    "@progress/kendo-react-buttons" "5.3.0"
-    "@progress/kendo-react-common" "5.3.0"
-    "@progress/kendo-react-labels" "5.3.0"
-    "@progress/kendo-react-popup" "5.3.0"
+    "@progress/kendo-react-buttons" "4.14.1"
+    "@progress/kendo-react-common" "4.14.1"
+    "@progress/kendo-react-labels" "4.14.1"
+    "@progress/kendo-react-popup" "4.14.1"
     prop-types "^15.6.0"
 
-"@progress/kendo-react-dialogs@^5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-react-dialogs/-/kendo-react-dialogs-5.3.0.tgz#d13eb19b730f99b38ea236eba9c68f121edf84b5"
-  integrity sha512-tBUb0U/xtOn+8646wWCAMTPh9OMyyAFMbtWd0UhnAbIL+FjNzgrUmmgv4k0fOZIZoMqcJMDvTz/EXBW6oADWoQ==
+"@progress/kendo-react-dialogs@^4.5.0":
+  version "4.14.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-dialogs/-/kendo-react-dialogs-4.14.1.tgz#23109e2ad8183fa02d3981aae417327ff3bdfb09"
+  integrity sha512-moyxkKC5F/yvlCptd7hYPD2IgQCxgAVckGhlKQ3v57rsinuhYcqkAXCuDEVohAGmKwVGp/4JcthvjD0NgLiziQ==
   dependencies:
-    "@progress/kendo-react-common" "5.3.0"
+    "@progress/kendo-react-common" "4.14.1"
     prop-types "^15.6.0"
 
-"@progress/kendo-react-dropdowns@^5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-react-dropdowns/-/kendo-react-dropdowns-5.3.0.tgz#379676f9ab39b702eee61cefc29cbad4f62d78a3"
-  integrity sha512-s/S8lCMoRDC6LWO+pb2y93gBoq8D8H6DU9UilLMwlr7pYd6dD9hbqspDFdzTO8d/rNQek/ia5UrMZDpCQuJ0hA==
+"@progress/kendo-react-dropdowns@^4.6.0":
+  version "4.14.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-dropdowns/-/kendo-react-dropdowns-4.14.1.tgz#bfd4c920ae02b0b957815c85f8d9020a25093c3a"
+  integrity sha512-Q074x2Q6cwxHY8siTnk9+TOMNqY/UIDJyNDGTiJKKRlCn1aHhaHI79zj8fzpP2y44ycpN/HQRquXtmGFU8TAXg==
   dependencies:
-    "@progress/kendo-react-common" "5.3.0"
-    "@progress/kendo-react-labels" "5.3.0"
-    "@progress/kendo-react-popup" "5.3.0"
+    "@progress/kendo-react-common" "4.14.1"
+    "@progress/kendo-react-labels" "4.14.1"
+    "@progress/kendo-react-popup" "4.14.1"
     prop-types "^15.6.0"
 
 "@progress/kendo-react-form@^4.5.0":
@@ -2049,14 +2023,6 @@
     "@progress/kendo-react-common" "4.14.1"
     prop-types "^15.6.0"
 
-"@progress/kendo-react-labels@5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-react-labels/-/kendo-react-labels-5.3.0.tgz#539bf26df5f18c3b4cc92465f42d13b9273cf8ba"
-  integrity sha512-4nyD/JVan4Q3vnV5PW7H3u+LgdVRjR3SLFZ/K9X3MoNk6O9M/E/+Z932riOWUzqjRTnQO+Y3u8cWL2m3TnFghg==
-  dependencies:
-    "@progress/kendo-react-common" "5.3.0"
-    prop-types "^15.6.0"
-
 "@progress/kendo-react-layout@^4.5.0":
   version "4.14.1"
   resolved "https://registry.yarnpkg.com/@progress/kendo-react-layout/-/kendo-react-layout-4.14.1.tgz#27e3d688c411cc953cba96d088a5a5274ddc2c5c"
@@ -2081,15 +2047,6 @@
   dependencies:
     "@progress/kendo-popup-common" "1.9.0"
     "@progress/kendo-react-common" "4.14.1"
-    prop-types "^15.6.0"
-
-"@progress/kendo-react-popup@5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-react-popup/-/kendo-react-popup-5.3.0.tgz#15b9749c8e51a847f51223c815be37e572f3d5e0"
-  integrity sha512-FVMki/mCiDvCFIWswR8D+hB/yHvnNpDFrKHdutA0c/1lNNH/BGk9Whyqy7dXzTTVGrKFvwIH77ST4nAS/Ifd9w==
-  dependencies:
-    "@progress/kendo-popup-common" "1.9.0"
-    "@progress/kendo-react-common" "5.3.0"
     prop-types "^15.6.0"
 
 "@progress/kendo-react-progressbars@^4.5.0":

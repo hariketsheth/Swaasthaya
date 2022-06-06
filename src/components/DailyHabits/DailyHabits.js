@@ -185,7 +185,7 @@ const DailyHabits = () => {
         // console.log(isLoading);
         if(!habits) {
             var skeleton_divs = [];
-            for(let i = 0; i < 5; i++) {
+            for(let i = 0; i < 8; i++) {
                 skeleton_divs.push(
                     <div style={{display: 'flex'}}>
                         <div>
@@ -228,7 +228,7 @@ const DailyHabits = () => {
                                 setExpandMe(!expandMe);
                             }}
                         >
-                            <HabitCard key={habit.id} title={habit.habit} bgc={habit.habitHistory[habit.habitHistory.length - 1] ? "#00ff00" : "#ffffff"} lab={habit.habitLabels} />
+                            <HabitCard key={habit.id} title={habit.habit} bgc={habit.habitHistory[habit.habitHistory.length - 1] ? "#cdf737" : "#ffffff"} lab={habit.habitLabels} />
                         </div>
                         <motion.div onClick={() => deleteHabitWrapper(habit)} className="delete__icon" whileHover={{ scale: 1.1 }} className="habit__card-delete" style={{ backgroundColor:"#c5221d", width: "20px", borderRadius: "5px", textAlign: "center", padding: "5px 10px 5px 10px"}}>
                             <span style={{ color: "white", cursor: "pointer"}} className="k-icon k-i-delete"></span>
@@ -282,7 +282,7 @@ const DailyHabits = () => {
                         <Dialog title={"Want more habits? Upgrade to premium 🤩!"} onClose={() => setPremium(false)}>
             
                         <div style={{ marginBottom: "20px" }} className="delete__habit-buttons">
-                            <Button style={{ backgroundColor: "#36E46B", borderRadius: "10px" }} onClick={() => setPremium(false)}>Upgrade to Kendo-Pro!</Button>
+                            <Button style={{ backgroundColor: "#36E46B", borderRadius: "10px" }} onClick={() => setPremium(false)}>Buy Swaasthaya-Pro!</Button>
                         </div>
                         </Dialog>
                     )

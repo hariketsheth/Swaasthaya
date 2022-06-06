@@ -52,6 +52,10 @@ Swaasthaya (meaning: Health in Hindi [India]) is a web application that can:
 <br>
 
 ## 🌳 Integration 
+- Created this based off of this Holaplex open source repo: https://github.com/holaplex/Solana-TPS-Discord-Bot
+- Need to run the backend off of your local machine. 
+- To do that, follow the instructions in this repo: https://github.com/dragochar/swaasthaya-solana-tps-backend
+- This adds the functionality to show the current Solana TPS on the Daily Habits page, and advice the user to focus on their mental health if the Solana TPS is too slow.
 
 <br>
 
@@ -69,7 +73,7 @@ We are using GitHub for the following reasons:
 
 ## 🧠 Challenges we ran into
 - Due to the difference in the time zones and works, it was a bit difficult to fix a common time and collaborate but we managed to get the project done in time.
-- None of the teammates were much acuqainted with usage of Holaplex and how to incorporate it in the idea, we had to do research while working on the project.
+- None of the teammates were much acquainted with usage of Holaplex and how to incorporate it in the idea, we had to do research while working on the project.
 
 <br>
 

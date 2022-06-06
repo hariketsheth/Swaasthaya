@@ -30,6 +30,7 @@
 	- `1 in every 20 Americans` is living with a serious mental health condition like schizophrenia, bipolar disorder, or long-term recurring major depression.
 	- 50% of all lifetime `mental illness begins by age 14`, and `75% by age 24.`
 
+<br>
 
 ## 💻 What it does
 Swaasthaya (meaning: Health in Hindi [India]) is a web application that can:
@@ -39,6 +40,8 @@ Swaasthaya (meaning: Health in Hindi [India]) is a web application that can:
 - The analysis conducted is not only important for making judgements at the backend but is also shown to the user. 
 - Based on the XP(Points) and level, the Users are rewarded with different assets, with which they can design their own garden
 
+<br>
+
 ## ⚙️ How we built it
 - Figma: For Designing and Prototyping
 - React JS: For FrontEnd
@@ -46,8 +49,11 @@ Swaasthaya (meaning: Health in Hindi [India]) is a web application that can:
 - Firebase: For Database 
 - IEEE Xplore and Springer: For Research and Facts on Mental Health
 
+<br>
+
 ## 🌳 Integration 
 
+<br>
 
 ## 🤝 Most Creative Use of GitHub
 We are using GitHub for the following reasons:
@@ -59,19 +65,29 @@ We are using GitHub for the following reasons:
 5. **`Using PRs and Issues:`** We are doing multiple PRs and building multiple Issues to keep on track of the project.
 6. **`Implementing the CI/CD workflow:`** GitHub makes it easy to implement the CI/CD workflow and makes the deployment process easy.
 
+<br>
+
 ## 🧠 Challenges we ran into
 - Due to the difference in the time zones and works, it was a bit difficult to fix a common time and collaborate but we managed to get the project done in time.
 - None of the teammates were much acuqainted with usage of Holaplex and how to incorporate it in the idea, we had to do research while working on the project.
+
+<br>
 
 ## 🏅 Accomplishments that we're proud of
 - Completing the project in the given time frame.
 - Implementing the Brainstormed idea, deploying it successfully and integrating it.
 
+<br>
+
 ## 📖 What we learned
 - Collaboration with other developers.
 - How to work with Holaplex, Web3, NFTs. Had a great learning experience
+
+<br>
 
 ## 🚀 What's next for Swaasthaya
 1. `Visualising Support Networks`- We are going to implement the idea as a mental health community forum, where patients post their problems. The support extended by community volunteers and messages sent by them is visualized as a growing forest, each tree representing a supporter. 
 2. `Meditation Room`- We are going to provide a virtual meditation room where individuals can select soothing sound tracks from a collection of tracks including sounds of nature including rain, wind, flowing river, rustling of forest, Tibetan flute etc. Users can choose a combination of tracks and control volume of each track to create a custom environment by simultaneously playing them, creating an immersive experience  during meditation sessions.
 3. `Semantic and Mood Analysis`- We would conducting an analysis and based on the Analysis, users would be given certain advantages and the project efficiency would increase because icluding this would enhance our project
+
+<br><br>

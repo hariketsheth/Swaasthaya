@@ -8,6 +8,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: 
+      name: MLH-Hackathon
+      url: https://swaasthaya-16620.web.app
+    
     steps:
       - uses: actions/checkout@v3
 

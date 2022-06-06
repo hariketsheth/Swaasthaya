@@ -20,10 +20,9 @@ jobs:
       - run: yarn
       - run: yarn run build
       - name: GitHub Action for Firebase
-        uses: w9jds/firebase-action@v1.5.0
+        uses: w9jds/firebase-action@v2.1.2
         with:
           args: deploy --only hosting
-          node-version: 16.x
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
           

@@ -15,6 +15,7 @@ import './DailyHabits.css';
 import firebase from 'firebase';
 import { useHistory } from 'react-router';
 import OverlayCard from '../OverlayCard/OverlayCard';
+import SolanaTPSTracker from '../SolanaTPSTracker/SolanaTPSTracker';
 import { motion } from 'framer-motion';
 
   
@@ -243,6 +244,7 @@ const DailyHabits = () => {
         <div className="habits_container-wrapper" style={{display: 'flex'}}>
             <div className="habits_container">
                 <HabitAppBar userName={appbarDisplay} />
+                <SolanaTPSTracker />
                 <h1> Your daily habits...</h1>
                 <ol className="habit__list">
                     <div className="daily__habits-input">

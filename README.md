@@ -19,7 +19,7 @@
 > _"There is hope, even when your brain cells tell there isn't"_ <br>
 > _"You don't have to be great to start, but you should start to be great"_
 
-- These two quotes alongwith the exponential rise in the Mental Health, anxiety, depression cases (even `Post COVID`) - our team [[Hariket](https://github.com/hariketsheth), [Zac](https://github.com/dragochar)] decided to work on a Mental Health App that does give users options to track their day-to-day activities. 
+- These two quotes along with the exponential rise in the Mental Health, anxiety, depression cases (even `Post COVID`) - our team [[Hariket](https://github.com/hariketsheth), [Zac](https://github.com/dragochar)] decided to work on a Mental Health App that does give users options to track their day-to-day activities. 
 - Online technologies have a lot of potential for expanding therapeutic intervention delivery methods to assist people cope with increasingly widespread mental diseases like anxiety and depression. 
 - `Cognitive reappraisal`, for example, is a technique that entails altering one's viewpoint on unpleasant ideas in order to enhance one's emotional state.
 - The mental health of `at risk` populations, including those with pre-existing mental health disorders, has also been raised as a cause for worry even after the pandemic. 
@@ -44,7 +44,7 @@ Swaasthaya (meaning: Health in Hindi [India]) is a web application that can:
 
 ## ⚙️ How we built it
 - Figma: For Designing and Prototyping
-- React JS: For FrontEnd
+- React JS: For Frontend
 - CSS: For Styling
 - Firebase: For Database 
 - IEEE Xplore and Springer: For Research and Facts on Mental Health
@@ -59,7 +59,7 @@ Swaasthaya (meaning: Health in Hindi [India]) is a web application that can:
 
 <br>
 
-## 🤝 Most Creative Use of GitHub
+## 🤝 Use of GitHub
 We are using GitHub for the following reasons:
 
 1. **`Collaboration:`** GitHub makes it easy to share code with others and helps a lot in collaboration.
@@ -90,8 +90,13 @@ We are using GitHub for the following reasons:
 <br>
 
 ## 🚀 What's next for Swaasthaya
-1. `Visualising Support Networks`- We are going to implement the idea as a mental health community forum, where patients post their problems. The support extended by community volunteers and messages sent by them is visualized as a growing forest, each tree representing a supporter. 
+1. `Visualizing Support Networks`- We are going to implement the idea as a mental health community forum, where patients post their problems. The support extended by community volunteers and messages sent by them is visualized as a growing forest, each tree representing a supporter. 
 2. `Meditation Room`- We are going to provide a virtual meditation room where individuals can select soothing sound tracks from a collection of tracks including sounds of nature including rain, wind, flowing river, rustling of forest, Tibetan flute etc. Users can choose a combination of tracks and control volume of each track to create a custom environment by simultaneously playing them, creating an immersive experience  during meditation sessions.
-3. `Semantic and Mood Analysis`- We would conducting an analysis and based on the Analysis, users would be given certain advantages and the project efficiency would increase because icluding this would enhance our project
+3. `Semantic and Mood Analysis`- We would conducting an analysis and based on the Analysis, users would be given certain advantages and the project efficiency would increase because including this would enhance our project
 
 <br><br>
+
+![Swaasthaya](https://user-images.githubusercontent.com/72455881/172213184-bd295ff2-69fe-4a37-bb62-631833c9c26d.png)
+
+
+[![Youtube](https://img.shields.io/badge/Watch%20Now-Swaasthaya-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=R39gbAesCSU)

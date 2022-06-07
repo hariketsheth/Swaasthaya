@@ -94,6 +94,29 @@ We are using GitHub for the following reasons:
 2. `Meditation Room`- We are going to provide a virtual meditation room where individuals can select soothing sound tracks from a collection of tracks including sounds of nature including rain, wind, flowing river, rustling of forest, Tibetan flute etc. Users can choose a combination of tracks and control volume of each track to create a custom environment by simultaneously playing them, creating an immersive experience  during meditation sessions.
 3. `Semantic and Mood Analysis`- We would conducting an analysis and based on the Analysis, users would be given certain advantages and the project efficiency would increase because including this would enhance our project
 
+<br>
+
+## 🌟 Steps to Get Started
+```bash
+# Clone the repo
+git clone https://github.com/hariketsheth/swaasthaya
+
+# Change the directory
+cd swaasthaya
+
+# Install the dependencies
+
+npm install
+#or
+yarn
+
+# Run the app
+
+npm start
+# or
+yarn start
+```
+
 <br><br>
 
 ![Swaasthaya](https://user-images.githubusercontent.com/72455881/172213184-bd295ff2-69fe-4a37-bb62-631833c9c26d.png)
